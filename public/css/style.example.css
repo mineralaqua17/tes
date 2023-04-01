@@ -1,0 +1,692 @@
+/* Navbar */
+
+nav{
+    background-color: #F1F3FF;
+}
+
+
+.nav-item a, .nav-item a:hover{
+    text-decoration: none;
+    color: #000 ;
+}
+
+.register{
+    background-color: #5CB85F;
+    border-radius: 3px;
+}
+
+.register a, .register a:hover{
+    color: #fff;
+    text-decoration: bold;
+}
+
+/* Off Canvas */
+
+.btn-offcanvas{
+    display: none;
+}
+
+.offcanvas a{
+    margin-bottom: 10px;
+}
+
+
+.offcanvas a:nth-child(5){
+    background-color: #5CB85F;
+    border-radius: 3px;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* Section Main */
+
+.main-section{
+    background-color:#F1F3FF;
+    padding-top: 20px;
+}
+
+.main{
+    display: flex;
+    overflow-x: hidden;
+    justify-content: space-between;
+}
+
+.main-pic img{
+    width: 600px;
+    height: 340px;
+}
+
+.main-desc{
+    margin-left: 6%;
+}
+
+.main-desc h1{
+    padding-top: 60px;
+    font-size: 36px;
+}
+
+.main-desc p{
+    padding-top: 15px;
+    font-size: 14px;
+    width: 500px;
+}
+
+.main-desc span button{
+    background-color: #5CB85F;
+    text-align: center;
+    padding: 3px;
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+
+
+
+
+.main-desc span button:hover{
+    background-color: #5CB85F;
+    color: #fff;
+}
+
+
+/* Our Services */
+
+.our-services{
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+.service-pic img{
+    width: 430px;
+    height: 400px;
+}
+
+.service-pic{
+    width: 50%;
+    margin-left: 8%;
+}
+
+
+.service-desc{
+    width: 50%;
+}
+
+.service-desc li{
+    text-decoration: none;
+}
+
+
+.service-desc .services-title{
+    padding-top: 20px;
+    width: 550px;
+}
+
+.service-desc .sewa{
+    padding-top: 20px;  
+    width: 550px;
+    font-size: 14px;
+}
+
+
+/* Why Us */
+
+.why-us{
+    margin-top: 100px;
+}
+
+.why-title {
+    margin-left: 6%;
+}
+
+.why-title h1{
+    font-size: 24px;
+}
+
+
+.why-card{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-left: 6%;
+}
+
+.card img{
+    margin-top: 20px;
+    margin-left: 6%;
+}
+
+.card h4{
+    font-size: 16px;
+}
+
+.card p{
+    padding-top: 10px;
+}
+
+
+/* Testimonial */
+
+
+.judul-testi{
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.tombol{
+    background-color: beige;
+}
+
+.testimonial{
+    overflow: hidden;
+    margin-top: 50px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.testi-card{
+    display: flex;
+    width: 600px;
+    height: 300px;
+    background-color: #F1F3FF;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.testi-img{
+    position: relative;
+    width: 30%;
+    margin: auto;
+    padding-left: 6%;
+}
+
+.testi-img img{
+    width: 100px;
+    height: 100px;
+}
+
+.testi-desc{
+    padding-top: 70px;
+    width: 70%;
+}
+
+.desc1{
+    padding-top: 10px;
+}
+
+.desc2 span{
+    position: relative;
+    bottom: 6px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+/* Sewa Mobil */
+
+
+.sewa-mobil{
+    background-color: #0D28A6;
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    height: 350px;
+}
+
+.sewa-mobil-head h5{
+    padding-top: 60px;
+    color:#fff;
+    font-size: 36px;
+    text-align: center;
+}
+
+.sewa-mobil-desc p{
+    padding-top: 20px;
+    color:#fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.sewa-mobil-text{
+    padding-top: 40px;
+}
+
+.sewa-mobil-text p{
+    text-align: center;
+    background-color: #5CB85F;
+    text-decoration: none;  
+    color: #fff;
+    border-radius: 3px;
+    width: 150px;
+    height: 30px;
+    margin: auto;
+    padding-top: 2.5px;
+}
+
+/* Question */
+
+.question{
+    display: flex;
+    margin-top: 150px;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+
+.left-question{
+    width: 50%;
+}
+
+.right-question{
+    width: 50%;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+
+
+
+
+
+
+/* Cari Mobil */
+
+
+.cari-container{
+    border-radius: 5px;
+    background-color:#fff;
+    position: absolute;
+    width: 80%;
+    top:390px;
+    left:125px;
+    display: flex;
+    justify-content: space-evenly;
+    border-color: #fff;
+    box-shadow: 1px 1px #efecec;
+
+}
+
+.card-form label{
+    margin: 5px;
+}
+
+
+.card-form{
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+.card-form.btn button{
+    color: #fff;
+    border-radius: 5px;
+    position: relative;
+    border: none;
+    background: #5CB85F;
+    top:25px;
+    right: 10px;
+    width: 150px;
+    height: 37px;
+}
+
+
+/* Jenis Mobil */
+
+
+.jns-mobil-container{
+    margin: auto;
+    margin-top: 100px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.mobil-card{
+    margin-top: 20px;
+}
+
+.card img{
+    margin: 0;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.desc-jns-mobil{
+    margin-left: 10px;
+}
+
+
+
+/* Footer */
+
+
+footer{
+    margin-top: 100px;
+    width: 100%;
+    height: 200px;
+    overflow-x: none;    
+}
+
+
+.block{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block1{
+    margin-top: 20px;
+
+}
+.list-block1 p{
+    font-size: 14px;  
+    margin-top: 15px;
+}
+
+
+.block2{
+    margin-top: 25px;
+    margin-left: 80px;
+}
+
+.list-block2{
+    margin-top: 6px;
+}
+
+.list-block2 span{
+    font-size: 14px;
+}
+
+.block3{
+    margin-top: 21px;  
+    margin-left: 60px;
+}
+
+.list-block3 span{
+    font-size: 14px;
+}
+
+.list-block3:nth-child(1){
+    margin-top: 10px;
+}
+
+.list-block3:nth-child(2){
+    margin-top: 15px;
+}
+
+.list-block3 img:nth-child(2),
+.list-block3 img:nth-child(3),
+.list-block3 img:nth-child(4),
+.list-block3 img:nth-child(5){
+    padding-left: 10px;
+}
+
+.block4{
+    margin-top: 30px;  
+    margin-left: 60px;
+}
+
+.block4 span{
+    font-size: 14px;
+}
+
+.list-block4 img{
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+
+@media screen and (max-width : 578px) {
+    .nav-item{
+        display: none;
+    } 
+    
+    .btn-offcanvas{
+        display: inline;
+        position: absolute;
+        right: 10px;
+    }
+    
+    #offcanvasRight{
+        width: 200px;
+    }
+    .main{
+        flex-wrap: wrap;
+    }
+
+    .main-desc h1{
+        padding-top: 10px;
+        font-size: 36px;
+    }
+
+    .main-desc p{
+        width: 350px;   
+    }
+
+    .main-pic img{
+        width: 100%;
+        height: 250px;
+    }
+
+    .main-desc{
+        width: 100%;
+    }
+
+    .main-pic{
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .our-services{
+        flex-wrap: wrap;
+    }
+    
+    .service-pic{
+        width: 100%;
+    }
+    .service-pic img{
+        width: 300px;
+        height: 280px;
+    }
+
+    .service-desc{
+        padding-top: 40px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .why-title{
+        text-align: center;
+    }
+
+    .x{
+        margin-top: 20px;
+    }
+
+    .wrap-testi-content{
+        width: 100%;
+    }
+
+    
+     .testi-card{
+        flex-wrap: wrap;
+        width: 90%;
+        margin: auto;
+        height: 350px;
+    }
+
+    .testi-img {
+        width: 100%;
+        padding-top: 20px;
+    }
+    .testi-desc{
+        width: 100%;
+        position: relative;
+        bottom: 70px;
+    }
+
+    .testi-img img{
+        margin-left: 35%;
+        position: relative;
+        /* top: 50px; */
+    }
+
+    .bintang{
+        padding-top: 20px;
+        margin-left: 39%;
+    }
+
+    .desc1{
+        padding-top: 15px;
+        width: 90%;
+        margin: auto;
+    }
+    .desc2{
+        position: relative;
+        bottom: 10px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .desc2 span{
+        font-weight: 500;
+    }
+
+    .sewa-mobil{
+        height: 450px;
+    }
+
+    .sewa-mobil-head h5{
+        font-size: 30px;
+        width: 70%;
+        margin: auto;
+    }
+
+    .sewa-mobil-desc{
+        width: 70%;
+        margin: auto;
+    }
+
+    .question{
+        margin-bottom: 30px;
+    }
+
+    .left-question, .right-question{
+        width: 100%;
+    }
+
+    .left-question h5{
+        font-weight: 500;
+        font-size: 28px;
+    }
+
+    .left-question p{
+        padding-top: 15px;
+        font-size: 14px;
+    }
+
+    .list-block1,
+    .list-block2,
+    .list-block3,
+    .list-block4{
+        width: 100%;
+    }
+
+    .list-block1{
+        margin-left: 10px;
+        width: 86%;
+        /* background-color: black; */
+    }
+
+    .list-block2{
+        bottom: 35px;
+        margin-left: 16px;
+        position: relative;
+        right: 86px;
+        /* background-color: red; */
+    }
+
+    .list-block3{
+        bottom: 56px;
+        margin-left: 16px;
+        position: relative;
+        right: 68px;
+        /* background-color: red; */
+    }
+
+    .list-block4{
+        bottom: 67px;
+        margin-left: 16px;
+        position: relative;
+        right: 68px;
+        /* background-color: red; */
+    }
+
+    .cari-container{
+        overflow-x: none;
+        flex-wrap: wrap;
+        position: relative;
+        margin-top: 20px;
+        top: 0;
+        right: 0;
+        left: 50px;
+    }
+
+    .jns-mobil-container{
+        flex-wrap: wrap;
+        position: relative;
+        margin-top: 20px;
+    }
+    .jns-mobil-container .card{
+        margin-top: 20px;
+        /* width: 26rem; */
+    }
+}
+
+

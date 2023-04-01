@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
+    <meta name="author" content="Sabrina" />
+    <meta name="description" content="Lorem ipsum dolor sit amet" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"
+    />
+    <title>Cari Mobil</title>
+
+    <!-- Example CSS -->
+    <link href="./css/style.example.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+          <div class="logo">
+              <img src="images/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+          </div>
+          <div class="btn-offcanvas">
+              <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasRightLabel">BCR</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                      <a class="nav-link" href="#">Our Services</a>
+                      <a class="nav-link" href="#">Why Us</a>
+                      <a class="nav-link" href="#">Testimonial</a>
+                      <a class="nav-link" href="#">FAQ</a>
+                      <a class="nav-link" href="#">Register</a>    
+                  </div>
+              </div>
+          </div>
+          <div class="link_nav">
+              <ul class="nav justify-content-end">
+                  <li class="nav-item">
+                  <a class="nav-link" href="#ourservices">Our Services</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="#whyus">Why Us</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="#testimonial">Testimonial</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="#">FAQ</a>
+                  </li>
+                  <li class="nav-item register">
+                  <a class="nav-link" href="#">Register</a>
+                  </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+  </nav>
+  <section class="main-section">
+          <div class="main">
+              <div class="main-desc">
+                  <h1>Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
+                  <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+                  <span><a href="#" class="nav-link">Mulai Sewa Mobil</a></span>
+              </div>
+              <div class="main-pic">
+                  <img src="images/img_car.png" alt="Car">
+              </div>
+          </div>
+  </section>
+  
+  
+
+  <form action="/cars" method="get">
+  <div class="cari-container">
+        <div class="card-form" id="card-tipe-driver">
+            <label for="">Tipe Driver</label>
+            <select class="form-select" name="keytype" id="">
+                <option selected>Pilih Tipe Driver</option>
+                <option value="drived">Dengan Sopir</option>
+                <option value="nondrived">Tanpa Sopir (Lepas Kunci)</option>
+            </select>
+        </div>
+        <div class="card-form" id="">
+            <label>Pilih Tanggal</label>
+                <input type="date" name="readydate" id="" class="form-control">
+        </div>
+        <div class="card-form" id="card-pilih-waktu">
+            <label>Pilih Waktu</label>
+            <input type="time" name="takedate" id="" class="form-control">
+        </div>
+        <div class="card-form" id="card-jumlah-penumpang">
+            <label>Jumlah Penumpang</label>
+            <input type="text" class="form-control" placeholder="Jumlah Penumpang" name="capacity" id="">
+        </div>
+        <div class="card-form btn">
+            <button>Cari</button>
+        </div>
+    </div>
+</form>
+
+
+
+
+<div class="jns-mobil-container"> 
+    <% carsData.forEach((element, index) => { %>
+        <div class="card mobil-card" style="width: 20rem;">
+            <img src="<%- element.image  %>" class="card-img" width="250" height="250" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><%= element.manufacture + " " + element.model  %> (<%= element.year  %>)</h5>
+              <p class="card-text"><%= element.description  %></p>
+              <p><img src="images/fi_users.png" alt="" width="25" height="25"> <span class="desc-jns-mobil"> <%= element.capacity  %> penumpang </span></p>
+              <p><img src="images/fi_settings.png" alt="" width="25" height="25"> <span class="desc-jns-mobil"> <%= element.transmission  %> </span> </p>
+              <p><img src="images/fi_calendar.png" alt="" width="25" height="25"> <span class="desc-jns-mobil"> Tahun <%= element.year  %> </span></p>
+          </div>
+        </div>
+        <% }) %>
+</div>
+
+    
+    
+
+  <footer>
+      <div class="container block">
+          <div class="block1">
+              <div class="list-block1 jalan"><p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p></div>
+              <div class="list-block1 email"><p>binarcarrental@gmail.com</p></div>
+              <div class="list-block1 notelp"><p>081-233-334-808</p></div>
+          </div>
+          <div class="block2">
+              <div class="list-block2 block2-1"><span>Our services</span></div>
+              <div class="list-block2 block2-2"><span>Why Us</span></div>
+              <div class="list-block2 block2-3"><span>Testimonial</span></div>
+              <div class="list-block2 block2-4"><span>FAQ</span></div>
+          </div>
+          <div class="block3">
+              <div class="list-block3 block3-1"><span>Connect with us</span></div>
+              <div class="list-block3 block3-2">
+                  <img src="images/icon_facebook.png" alt="facebook">
+                  <img src="images/icon_instagram.png" alt="instagram">
+                  <img src="images/icon_twitter.png" alt="twiter">
+                  <img src="images/icon_mail.png" alt="mail">
+                  <img src="images/icon_twitch.png" alt="twitch">
+              </div>  
+          </div>
+          <div class="block4">
+              <div class="list-block4 block4-1"><span>Copyright Binar 2022</span></div>
+              <div class="list-block4 block4-2">
+                  <img src="images/logo.png" alt="logo" width="30" height="30">
+              </div>
+          </div>
+      </div>
+  </footer>
+
+
+
+
+    <!-- Example Javascript -->
+    <script type="text/javascript" src="./scripts/binar.js"></script>
+    <script type="text/javascript" src="./scripts/app.example.js"></script>
+    <script type="text/javascript" src="./scripts/car.example.js"></script>
+    <script type="text/javascript" src="./scripts/main.example.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  </body>
+</html>
